@@ -17,14 +17,14 @@ def retornaLadrilho(coordenadas):
   return saida[0],saida[1]
 
 #variáveis gerais:
-potenciasDeN = [10]
+potenciasDeN = [5,10,15,20]
 dispersoes = {}
 
 #Repete o procedimento para o próximo valor de n
 for n in potenciasDeN:
   listaResutados = []
   #repete o experimento 100 vezes
-  for j in range(1):
+  for j in range(100):
     matrizLadrilhos = np.zeros((10,10)) #Matriz que contabiliza o numero de pontos por ladrilho
     #repete o procedimento n vezes
     for i in range(pow(2,n)):
